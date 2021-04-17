@@ -5,7 +5,7 @@ export default class FormUsuario extends Component {
     constructor(props) {
         super(props);
 
-        this.backendUrl = 'ec2-54-196-186-91.compute-1.amazonaws.com:5000/usuarios';
+        this.backendUrl = 'ec2-3-88-201-68.compute-1.amazonaws.com:5000/usuarios';
         this.baseState = {
             nome: '',
             email: '',
