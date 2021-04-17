@@ -16,12 +16,12 @@ router.post('/', [
 	check('cidade').trim().escape(),
 	check('idade', 'Idade deve ser um número inteiro maior ou igual a 0.')
 		.trim().escape().optional()
-		.isInt({ min: 0}).toInt(),
+		.isInt({ min: 0 }).toInt(),
 	check('comentarios').trim().escape(),
 	check('sexo').trim().escape(),
 	check('termos', 'Você precisa concordar com os termos de uso.')
 		.trim().escape().toBoolean().custom(value => value)
-], ((req, res) => {
+], (req, res) => {
 	const erros = validationResult(req);
 	const usuario = req.body;
 
