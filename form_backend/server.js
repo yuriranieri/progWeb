@@ -3,7 +3,7 @@ const cors = require('cors');
 const app = express();
 
 const port = 5000;
-const hostName = 'ec2-54-196-186-91.compute-1.amazonaws.com';
+const hostName = 'ec2-3-88-201-68.compute-1.amazonaws.com';
 const usuariosRouter = require('./routes/usuarios');
 
 app.use(cors());
